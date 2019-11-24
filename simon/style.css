@@ -1,0 +1,142 @@
+body {
+  background: #202124;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+.by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  padding-right: 10px;
+}
+.rs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  padding-bottom: 10px;
+}
+.twitter {
+  height: 25px;
+  padding-right: 10px;
+}
+.linkedin {
+  height: 25px;
+}
+.ui-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+.ui-container .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+.ui-container .menu div {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s;
+  border-left: 4px solid white;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.ui-container .menu div:hover {
+  opacity: 1;
+}
+.ui-container .menu div:last-child {
+  margin: 0;
+}
+.ui-container .turn {
+  color: #c0d904;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+.ui-container .game-over {
+  color: #d94343;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+.ui-container .counters {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 40px;
+}
+.ui-container .counters > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  flex: 1;
+}
+.page-container {
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+}
+.page-container .note-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 50px);
+  justify-content: space-between;
+  width: calc(100% - 50px);
+}
+.page-container .note-container .note {
+  opacity: 0.5;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 15px;
+}
+.page-container .note-container .note.do {
+  background-color: #2ecc71;
+}
+.page-container .note-container .note.re {
+  background-color: #e74c3c;
+}
+.page-container .note-container .note.mi {
+  background-color: #f1c40f;
+}
+.page-container .note-container .note.fa {
+  background-color: #3498db;
+}
+.page-container .note-container .note .label {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.page-container .note-container .note.played {
+  opacity: 1;
+}
+.page-container .note-container .note.played .label {
+  opacity: 1;
+}
